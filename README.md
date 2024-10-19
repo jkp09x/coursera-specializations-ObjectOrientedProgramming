@@ -8,7 +8,8 @@
 - Multiple module code creation.
 
 ### Specialization Courses
-1. Introduction to Object-Oriented Programming in C++ ✅
+1. [Introduction to Object-Oriented Programming in
+   C++](https://github.com/jkp09x/certifications/blob/main/Coursera_Specialization_Object-OrientedProgramming_IntroToObject-OrientedProgramming.pdf) ✅
 2. C++ Programming: Classes and Data
 3. Object-Oriented Programming in C++: Functions
 4. Working with Objects in C++
