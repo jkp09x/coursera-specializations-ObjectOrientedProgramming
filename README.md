@@ -1,5 +1,5 @@
 # Coursera Specialization: Object Oriented Programming
-## Link: https://www.coursera.org/specializations/object-oriented-programming-s12n
+[Specialization Link](https://www.coursera.org/specializations/object-oriented-programming-s12n)
 ### Introduction
 5-course specialization that teaches programming skills in C++. Learning objectives:
 - Use control flow to build interactive, multi-branched, iterated programs.
