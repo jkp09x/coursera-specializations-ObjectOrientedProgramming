@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits> // for  td::numeric_limits
 
 void printMenu()
 {
@@ -14,6 +15,14 @@ void getUserOption(int &userInput)
 {
     std::cout << "Type in 1-6" << std::endl;
     std::cin >> userInput;
+    // Handle invalid input from user (non-numeric input)
+    if (std::cin.fail())
+    {
+      // Clear CIN stream
+      std::cin.clear();
+      // Ignore remaining cin buffer
+      std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+    }
     std::cout << "You chose: " << userInput << std::endl;
 }
 
