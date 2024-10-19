@@ -1,5 +1,6 @@
 #include <iostream>
 #include <limits> // for  td::numeric_limits
+#include <map> // for storing unction pointers
 
 void printMenu()
 {
@@ -58,39 +59,28 @@ void goToNextTimeframe()
     std::cout << "Continue to next timeframe." << std::endl;
 }
 
-const void printInvalidOption()
+void printInvalidOption()
 {
     std::cout << "You chose an invalid option. Try again, select option between 1-6." << std::endl;
 }
 
 void processMenuOption(const int &userInput)
 {
-    switch (userInput)
-    {
-        case 0:
-            printInvalidOption();
-            break;
-        case 1:
-            printHelp();
-            break;
-        case 2:
-            printMarketStats();
-            break;
-        case 3:
-            placeOffer();
-            break;
-        case 4:
-            placeBid();
-            break;
-        case 5:
-            printWallet();
-            break;
-        case 6:
-            goToNextTimeframe();
-            break;
-        default:
-            printInvalidOption();
-    }
+  // Using map to store function pointers
+  std::map<int, void (*)()> menu;
+
+  menu[0] = printInvalidOption;
+  menu[1] = printHelp;
+  menu[2] = printMarketStats;
+  menu[3] = placeOffer;
+  menu[4] = placeBid;
+  menu[5] = printWallet;
+  menu[6] = goToNextTimeframe;
+
+  if (userInput >= 1 && userInput <= 6)
+    menu[userInput]();
+  else
+    menu[0]();
 }
 
 int main () {
