@@ -9,12 +9,11 @@
 
 ### Specialization Courses
 1. [Introduction to Object-Oriented Programming in C++](https://github.com/jkp09x/certifications/blob/main/Coursera_Specialization_Object-OrientedProgramming_IntroToObject-OrientedProgramming.pdf) ✅
-    - Learning Objectives
-        - Write, compile, run C++ code
-        - Use standard library to do text I/O
-        - Write and call simple functions
-        - Use conditional loops (if/else if/else, while, switch)
-        - Learn about function pointers
+    - Write, compile, run C++ code
+    - Use standard library to do text I/O
+    - Write and call simple functions
+    - Use conditional loops (if/else if/else, while, switch)
+    - Learn about function pointers
 2. C++ Programming: Classes and Data
 3. Object-Oriented Programming in C++: Functions
 4. Working with Objects in C++
