@@ -46,3 +46,21 @@ In Course 01 - assignment 02. I was able to understand and learn the syntax of h
    }
    ```
 </details>
+
+#### Documentation Comment Syntax
+In Course 01 - /** */ the double * is used to indicate a documentation comment. These are used for tools like Doxygen and/or IDEs.
+<details>
+   <summary>Click to expand</summary>
+   
+   ```c++
+   /**
+    * This function calculates the factorial of a given number.
+    * @param n The number to calculate the factorial of.
+    * @return The factorial of n.
+    */
+   int factorial(int n) {
+       // ... implementation
+   }
+   ```
+</details>
+
